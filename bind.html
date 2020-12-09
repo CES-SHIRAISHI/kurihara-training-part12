@@ -1,24 +1,27 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <title>商品一覧</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
+
 <body>
   <div id="app">
-     {{lang == 'ja' ? message_ja : message_en}}
+    {{lang == 'ja' ? message_ja : message_en}}
   </div>
-<script>
-　　　var app=new Vue({
-　　　　　el:'#app',
-          data:{
-             message_en:'Hello!',
-             message_ja:'こんにちは！',
-             lang:'ja'　　　　　
-          }
-　　　});　　　
-</script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message_en: 'Hello!',
+        message_ja: 'こんにちは！',
+        lang: 'ja'
+      }
+    });　　　
+  </script>
 </body>
+
 </html>
