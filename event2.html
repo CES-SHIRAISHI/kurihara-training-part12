@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>商品一覧</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<!-- ここにHTMLを挿入 -->
+　<div id="app">
+  ウィンドウの横幅:{{width}}<br>
+  ウィンドウの高さ:{{height}}
+  </div>   
+
+<script>
+<!-- ここにJSを挿入 -->
+var app=new Vue({
+  el:'#app',
+  data:{
+    width:window.innerWidth,
+    height:window.innerHeight
+  },
+  created:function(){
+  //イベントハンドラー登録
+    addEventListener('resize',this.resizeHandler);
+  },
+  beforeDestroy:function(){
+  //イベントハンドラー解除
+　　removeEventListener('resize',this.resizeHandler);
+  },
+  methods:{
+  //イベントハンドラー
+    resizeHandler:function($event){
+      this.width=$event.target.innerWidth;
+      this.height=$event.target.innerHeight;
+　 }
+  }
+});
+</script>
+</body>
+</html>

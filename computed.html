@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>商品一覧</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+<!-- ここにHTMLを挿入 -->
+<div id="app">
+  <div v-show="show">
+    <p>now1:"{{now1()}}"</p>
+    <p>now2:"{{now2}}"</p>
+　</div>
+</div>
+<script>
+<!-- ここにJSを挿入 -->
+var app= new Vue({
+　el:'#app',
+  data:{
+    show:true
+   },
+  methods:{
+    now1:function(){
+      return (new Date()).toLocaleString();
+    }
+  },
+  computed:{
+    now2:function(){
+      return (new Date()).toLocaleString();
+    }
+  }
+});
+</script>
+</body>
+</html>
