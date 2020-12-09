@@ -1,31 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>商品一覧</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-</head>
-<body>
-　　<div id="app">
- 　　<p>当店のサービスはいかがでしたか?:{{answer}}</p>
-　　 <label>
-       <input type="radio" v-model="answer"  value="すばらしい">すばらしい
-　　 </label>
-　　 <label>
-       <input type="radio" v-model="answer"  value="普通">普通
-　　 </label>
-　　 <label>
-       <input type="radio" v-model="answer"  value="まだまだ">まだまだ
-　　 </label>
-　</div>
-<script>
-　　var app=new Vue({
-　　　el:'#app',
-      data:{
-        answer:'選択してください'
-      }
-   });
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>商品一覧</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>当店のサービスはいかがでしたか?:{{answer}}</p>
+
+      <label>
+        <input type="radio" v-model="answer" value="すばらしい" />すばらしい
+      </label>
+
+      <label> <input type="radio" v-model="answer" value="普通" />普通 </label>
+
+      <label>
+        <input type="radio" v-model="answer" value="まだまだ" />まだまだ
+      </label>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          answer: "選択してください",
+        },
+      });
+    </script>
+  </body>
 </html>

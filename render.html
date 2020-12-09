@@ -1,25 +1,28 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <title>商品一覧</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-</head>
-<body>
-<!-- ここにHTMLを挿入 -->
-  <div id="app">
-    <span v-if="stock >=1">残り{{stock}}個です。</span>
-    <span v-else>在庫切れです。</span>
-  </div>
-<script>
-<!-- ここにJSを挿入 -->
-var app=new Vue({
-  el:'#app',
-  data:{
-    stock:10
-  }
-});
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>商品一覧</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body>
+    <!-- ここにHTMLを挿入 -->
+    <div id="app">
+      <span v-if="stock >=1">残り{{stock}}個です。</span>
+      <span v-else>在庫切れです。</span>
+    </div>
+    <!-- ここにJSを挿入 -->
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          stock: 10,
+        },
+      });
+    </script>
+  </body>
 </html>
