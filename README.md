@@ -17,7 +17,7 @@
 
 ## ハンズオン資料 + 追加したコメント
 
-| ページ | デモ | 備考 |
+| p | デモ | 備考 |
 | ------------- | ------------- | ------------- |
 | 15 | [bind.html](https://ces-shiraishi.github.io/kurihara-training-part12/bind.html) | [javascript式の話](https://jp.vuejs.org/v2/guide/syntax.html#JavaScript-%E5%BC%8F%E3%81%AE%E4%BD%BF%E7%94%A8) |
 | 15 | [render.html](https://ces-shiraishi.github.io/kurihara-training-part12/render.html) | [v-if式](https://jp.vuejs.org/v2/guide/conditional.html#v-if) <br/> [ディレクティブの式](https://jp.vuejs.org/v2/guide/syntax.html#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96) |
@@ -32,15 +32,3 @@
 | 26 | [checktantai.html](https://ces-shiraishi.github.io/kurihara-training-part12/checktantai.html) |  |
 | 27 | [radio.html](https://ces-shiraishi.github.io/kurihara-training-part12/radio.html) |  |
 | 27 | [selectbox.html](https://ces-shiraishi.github.io/kurihara-training-part12/selectbox.html) |  |
-
-
-
-
-192.168.1.215
-192.168.1.216
-192.168.36.239
-
-192.168.1.10\share
-※ ファイルサーバ
-
-
