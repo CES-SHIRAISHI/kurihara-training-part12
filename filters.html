@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>商品一覧</title>
+    <title>filters</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -12,7 +12,21 @@
 
   <body>
     <!-- ここにHTMLを挿入 -->
-    <div id="app">{{ price | unit }} {{ price | number_format | unit }}</div>
+    <div id="app">
+      <table>
+        <tr>
+          <td>price | unit と記載した場合</td>
+          <td>{{ price | unit }}</td>
+          <td> unit( price ) という感じ</td>
+        </tr>
+        <tr>
+          <td>price | number_format | unit と記載した場合</td>
+          <td>{{ price | number_format | unit }}</td>
+          <td> unit( number_format ( price ) ) という感じ</td>
+        </tr>
+      </table>
+      
+    </div>
 
     <!-- ここにJSを挿入 -->
     <script>
@@ -23,6 +37,7 @@
         },
         filters: {
           number_format: function (val) {
+            // カンマ区切りにする
             return val.toLocaleString();
           },
           unit: function (val) {
