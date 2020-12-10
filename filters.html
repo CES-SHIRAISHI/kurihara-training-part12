@@ -13,16 +13,14 @@
   <body>
     <!-- ここにHTMLを挿入 -->
     <div id="app">
-      <table>
+      <table border="1">
         <tr>
           <td>price | unit と記載した場合</td>
           <td>{{ price | unit }}</td>
-          <td> unit( price ) という感じ</td>
         </tr>
         <tr>
           <td>price | number_format | unit と記載した場合</td>
           <td>{{ price | number_format | unit }}</td>
-          <td> unit( number_format ( price ) ) という感じ</td>
         </tr>
       </table>
       
