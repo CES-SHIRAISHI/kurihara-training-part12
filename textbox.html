@@ -11,8 +11,44 @@
   </head>
   <body>
     <div id="app">
-      <input type="text" v-on:input="yearInputHandler" v-bind:value="year" />
-      <p>{{year}}</p>
+      <table border="1">
+        <tr>
+          <th>コード</th>
+          <th>入力欄</th>
+          <th>レンダリングされる値</th>
+        </tr>
+
+        <tr>
+          <td><pre>&lt;input type="text" v-on:input="yearInputHandler" v-bind:value="year" /&gt;</pre></td>
+          <td>
+            <input type="text" v-on:input="yearInputHandler" v-bind:value="year" />            
+          </td>
+          <td>
+            <p>{{year}}</p>            
+          </tr>
+        </td>
+
+        <tr>
+          <td><pre>&lt;input type="text" v-bind:value="year1" /&gt;</pre></td>
+          <td>
+            <input type="text" v-bind:value="year1" />
+          </td>
+          <td>
+            <p>{{year1}}</p>            
+          </td>
+        </tr>
+
+        <tr>
+          <td><pre>&lt;input type="text" v-model="year2" /&gt;</pre></td>
+          <td>
+            <input type="text" v-model="year2" />
+          </td>
+          <td>
+            <p>{{year2}}</p>            
+          </td>
+        </tr>
+
+      </table>
     </div>
 
     <script>
@@ -20,6 +56,8 @@
         el: "#app",
         data: {
           year: new Date().getFullYear(),
+          year1: new Date().getFullYear(),
+          year2: new Date().getFullYear(),
         },
         methods: {
           yearInputHandler: function ($event) {

@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>商品一覧</title>
+    <title>watch</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -11,10 +11,10 @@
   </head>
   <body>
     <div id="app">
-      <template v-if="stock>=1">
+      <div v-if="stock>=1">
         <span class="num">残り{{stock}}個</span>
         <button class="btn" v-on:click="onDeleteItem">削除</button>
-      </template>
+      </div>
       {{message}}
     </div>
     <script>

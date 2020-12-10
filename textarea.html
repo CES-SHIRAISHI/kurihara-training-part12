@@ -11,14 +11,14 @@
   </head>
   <body>
     <div id="app">
-      <textarea>{{message}}</textarea>
+      <textarea v-model="message">{{message}}</textarea>
       <pre>入力内容：{{message}}</pre>
     </div>
     <script>
       var app = new Vue({
         el: "#app",
         data: {
-          message: "これは一方通行のバインドです",
+          message: "これは一方通行のバインドなのでしょうか？",
         },
       });
     </script>
